@@ -1,0 +1,7 @@
+## Interface: 90105
+## Title: MySpecIcon
+## Notes: Shows your secialization icon.
+## Author: Ara
+## Version: 0.1.0
+
+MySpecIcon.lua
