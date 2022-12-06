@@ -18,16 +18,16 @@ function events:PLAYER_ENTERING_WORLD(...)
 
     frame:SetPoint("CENTER", -180, -250)
     frame:Show()
-    print("Hello World! Hello PLAYER_ENTERING_WORLD");
+    print("Hello World! MySpecIcon PLAYER_ENTERING_WORLD");
 end
 
 function events:CINEMATIC_START(...)
-    print("Hello CINEMATIC_START");
+    print("MySpecIcon CINEMATIC_START");
     frame:Hide()
 end
 
 function events:CINEMATIC_STOP(...)
-    print("Hello CINEMATIC_STOP");
+    print("MySpecIcon CINEMATIC_STOP");
     frame:Show()
 end
 
@@ -38,12 +38,12 @@ function events:ACTIVE_TALENT_GROUP_CHANGED(...)
     print("Your current spec:", currentSpecName, currentSpecIcon)
     frame:Hide()
     t:SetTexture(currentSpecIcon)
-    t:SetAllPoints(frame)
-    frame.texture = t
+    --t:SetAllPoints(frame)
+    --frame.texture = t
 
     --frame:SetPoint("CENTER", -180, -250)
     frame:Show()
-    print("Hello ACTIVE_TALENT_GROUP_CHANGED");
+    print("MySpecIcon ACTIVE_TALENT_GROUP_CHANGED");
 end
 
 frame:SetScript("OnEvent", function(self, event, ...)
